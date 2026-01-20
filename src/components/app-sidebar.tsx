@@ -7,8 +7,6 @@ import {
   IconListDetails,
   IconSettings,
 } from "@tabler/icons-react";
-import logoLight from "../assets/logo-light.svg";
-import logoDark from "../assets/logo-dark.svg";
 
 import { NavMain } from "./nav-main";
 import { NavSecondary } from "./nav-secondary";
@@ -26,6 +24,11 @@ import {
   useTheme,
 } from "@valoro/ui";
 import { getUserProfile, UserProfile } from "@FIAP/util";
+
+const logoLight =
+  "https://raw.githubusercontent.com/ValdielsonSiqueira/sidebar/cff877023c026ecdc1b9a0d46dbbf7a2cfca3c89/src/assets/logo-light.svg";
+const logoDark =
+  "https://raw.githubusercontent.com/ValdielsonSiqueira/sidebar/cff877023c026ecdc1b9a0d46dbbf7a2cfca3c89/src/assets/logo-light.svg";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { theme } = useTheme();
