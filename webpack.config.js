@@ -9,7 +9,6 @@ module.exports = (webpackConfigEnv, argv) => {
     projectName: "sidebar",
     webpackConfigEnv,
     argv,
-    outputSystemJS: false,
   });
 
   // Remove valid rules that match CSS to avoid double-loading (css-loader conflict)
