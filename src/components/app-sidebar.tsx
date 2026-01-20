@@ -33,7 +33,9 @@ const logoDark =
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { theme } = useTheme();
   const logoSrc = theme === "light" ? logoLight : logoDark;
-  const [user, setUser] = React.useState<UserProfile>(() => getUserProfile());
+  const [user, setUser] = React.useState<UserProfile | null>(() =>
+    getUserProfile()
+  );
   const [isProfileDialogOpen, setIsProfileDialogOpen] = React.useState(false);
   const [isHelpDialogOpen, setIsHelpDialogOpen] = React.useState(false);
 
@@ -55,6 +57,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const handleAjudaClick = () => {
     setIsHelpDialogOpen(true);
   };
+
+  if (!user) {
+    return null;
+  }
 
   const data = {
     user: {
