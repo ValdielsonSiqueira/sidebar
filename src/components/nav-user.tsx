@@ -26,7 +26,7 @@ import {
 } from "@valoro/ui";
 
 import { ProfileDialog } from "./profile-dialog";
-import { UserProfile } from "../lib/user-service";
+import { UserProfile } from "@FIAP/util";
 
 export function NavUser({
   user,

@@ -25,7 +25,7 @@ import {
   SidebarMenuItem,
   useTheme,
 } from "@valoro/ui";
-import { getUserProfile, UserProfile } from "../lib/user-service";
+import { getUserProfile, UserProfile } from "@FIAP/util";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { theme } = useTheme();

@@ -12,11 +12,7 @@ import {
   Label,
   Button,
 } from "@valoro/ui";
-import {
-  getUserProfile,
-  saveUserProfile,
-  UserProfile,
-} from "../lib/user-service";
+import { getUserProfile, saveUserProfile, UserProfile } from "@FIAP/util";
 
 type ProfileFormData = {
   name: string;
